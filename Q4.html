@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS TABLE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+		table{
+			width: 100%;
+			margin-bottom: 1em;
+			border-collapse: collapse;
+		}
+		th,td{
+			text-align: left;
+			padding: 0.3125em;
+			border: 0.0625em solid #ddd;
+		}
+		input[type="text"]{
+			background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Foutline-search-icon-illustration-vector-260nw-753573802.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fsearch%2Bicon&tbnid=npAAyCtuCeC91M&vet=10CAUQxiAoA2oXChMIyKfH27jM5wIVAAAAAB0AAAAAEAc..i&docid=HeqpQe314bS56M&w=260&h=280&itg=1&q=search%20icon%20for%20text%20box%20.png&ved=0CAUQxiAoA2oXChMIyKfH27jM5wIVAAAAAB0AAAAAEAc);
+			background-position: top left;
+			background-repeat: no-repeat;
+		}
+		button{
+			border: none;
+			border-radius: 50%;
+			padding: 0.3250em 0.625em;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.main{
+			border: 0.3125em groove grey;
+			padding: 3.125em;
+			padding-bottom: 5em;
+		}
+		.TM{
+			display: inline-block;
+			width: 33%;
+			height: 3.125em;
+			margin-bottom: 0.625em;
+		}
+		.LH{
+			float: left;
+			margin-bottom: 0.625em;
+		}
+		.RH{
+			float: right;
+			margin-bottom: 0.625em;
+		}
+		.clear::clear{
+			clear: both;
+			content: "";
+			display: table;
+		}
+		.pl{
+			text-align: center;
+			font-size: 1.7em;
+		}
+		.fa-eye{
+			color: #04a9f4;
+		}
+		.fa-pen{
+			color: #ffc207;
+		}
+		.fa-trash-alt{
+			color: #e34724;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="clear">
+			<div class="TM">
+				show
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option id="5" selected="5">5</option>
+					<option>6</option>
+				</select>
+				entries
+			</div>
+			<div class="TM"><p class="pl">Customer<strong> Details</strong></p></div>
+			<div class="TM">
+				<input type="text" name="search" placeholder="search" style="float: right; margin-top: 1.875em;">
+			</div>
+		</div>
+		<div class="container">
+			<table>
+				<tr>
+					<th>#</th>
+					<th>Name<i class="fa fa-sort"></i></th>
+					<th>Address</th>
+					<th>City<i class="fa fa-sort"></i></th>
+					<th>Pincode</th>
+					<th>Country<i class="fa fa-sort"></i></th>
+					<th>Actions</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Thomas Hardy</td>
+					<td>89 Chiarsco Rd.</td>
+					<td>Portland</td>
+					<td>91219</td>
+					<td>USA</td>
+					<td><i class="fas fa-eye"></i>&nbsp<i class="fas fa-pen"></i>&nbsp<i class="fas fa-trash-alt"></i></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Maria Anders</td>
+					<td>Obere Str.57</td>
+					<td>Berlin</td>
+					<td>12209</td>
+					<td>Germany</td>
+					<td><i class="fas fa-eye"></i>&nbsp<i class="fas fa-pen"></i>&nbsp<i class="fas fa-trash-alt"></i></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Fran Wilson</td>
+					<td>C/Araquil,67</td>
+					<td>Madrid</td>
+					<td>28023</td>
+					<td>Spain</td>
+					<td><i class="fas fa-eye"></i>&nbsp<i class="fas fa-pen"></i>&nbsp<i class="fas fa-trash-alt"></i></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Dominic Perrier</td>
+					<td>25,rue Lauriston</td>
+					<td>Paris</td>
+					<td>75016</td>
+					<td>France</td>
+					<td><i class="fas fa-eye"></i>&nbsp<i class="fas fa-pen"></i>&nbsp<i class="fas fa-trash-alt"></i></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Martin Blank</td>
+					<td>Via Monteblanco 34</td>
+					<td>Turin</td>
+					<td>10100</td>
+					<td>Italy</td>
+					<td><i class="fas fa-eye"></i>&nbsp<i class="fas fa-pen"></i>&nbsp<i class="fas fa-trash-alt"></i></td>
+				</tr>
+			</table>
+		</div>
+		<div class="clear">
+			<div class="LH">Showing <strong>5</strong> out of <strong>25</strong> entries</div>
+			<div class="RH">
+				<button type="button" style="border-radius: 0;">Previous</button>
+				<button type="button">1</button>
+				<button type="button">2</button>
+				<button type="button" style="background-color: #04a9f4;">3</button>
+				<button type="button">4</button>
+				<button type="button">5</button>
+				<button type="button" style="border-radius: 0;">Next</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

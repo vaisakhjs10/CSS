@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN</title>
+	<style type="text/css">
+		*{
+			margin: 0em;
+		}
+		body{
+			background: linear-gradient(
+				to right,
+				#17202A 0%,
+				#17202A 60%,
+				#3CB371 60%,
+				#3CB371 100%);
+			font-family: 'Century Gothic', sans-serif;
+		}
+		div.zero{
+			margin-top: 0em;
+			padding: 0em;
+			width: 100%;
+			height: 30px;
+			background-color: #FFFFF0;
+		}
+		.circle{
+			position: absolute;
+			border: 0.063em solid;
+			border-color: red;
+			background-color: red;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			margin-top: 0.5em;
+			margin-left: 10px;
+		}
+		#circle1{
+			margin-left: 30px;
+			border-color: #FFD700;
+			background-color: #FFD700;
+		}
+		#circle2{
+			margin-left: 50px;
+			border-color: #3CB371;
+			background-color: #3CB371;
+		}
+		div.one{
+			margin-left: 50px;
+			margin-top: 50px;
+		}
+		p.txt1{
+			position: absolute;
+			font-size: 50px;
+			color: #DCDCDC;
+			margin-top: 120px;
+			margin-left: 50px;
+		}
+		p.txt2{
+			position: absolute;
+			font-size: 20px;
+			color: #696969;
+			margin-top: 190px;
+			margin-left: 50px;
+		}
+		p.txt3{
+			position: absolute;
+			width: 50em;
+			color: #696969;
+			margin-top: 260px;
+			margin-left: 50px;
+			line-height: 25px;
+			font-family: sans-serif;
+		}
+		p.txt4{
+			color: #DCDCDC;
+			font-size: 25px;
+			margin-bottom: 1.25em;
+		}
+		a{
+			text-decoration: none;
+			color: #C0C0C0;
+		}
+		button.two{
+			position: absolute;
+			font-weight: bolder;
+			border-color: #3CB371;
+			background-color: #3CB371;
+			color: white;
+			margin-top: 355px;
+			margin-left: 50px;
+			border-radius: 3px;
+			width: 150px;
+			height: 35px;
+		}
+		input{
+			padding: 5px;
+			border: 1px solid #3CB371;
+			background-color: #3CB371;
+			border-bottom: 1px solid #DCDCDC;
+		}
+		div.three{
+			margin-top: 520px ;
+			margin-left: 50px;
+		}
+		select{
+			background-color: #17202A;
+			color: #696969;
+			font-family: sans-serif;
+			font-weight: bold;
+			border: 1px #17202A;
+		}
+		a.opts{
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 13px;
+			padding: 40px;
+			color: #696969;
+		}
+		h3{
+			color: #DCDCDC;
+		}
+		label{
+			color: #DCDCDC;
+		}
+		button.four{
+			border: 1px solid #3CB371;
+			border-radius: 3px;
+			color: #3CB371;
+			font-weight: bolder;
+			background-color: #DCDCDC;
+			margin-top: 25px;
+			padding: 5px;
+			width: 5em;
+		}
+		div.four{
+			position: absolute;
+			margin-left: 62.5em;
+			margin-top: 9.375em;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="zero">
+		<div class="circle"></div>
+		<div class="circle" id="circle1"></div>
+		<div class="circle" id="circle2"></div>
+	</div>
+	<div class="one">
+		<img src="https://cosy.erc.edu/assets/my-erc/img/logo-white.png" style="width:130px">
+	</div>
+	<div class="two">
+		<p class="txt1">Welcome</p>
+		<p class="txt2">Register for ERC account here</p>
+		<p class="txt3">Register for free ERC account here and get access to the webshop,academy and MyERC membership portal.We’d like to thank everyone who participated in the membership beta, without your hard work and feedback membership wouldn’t be where it is today. This was a massive project and a highly requested feature, so please let us know what you think, we can’t wait to see the amazing new membership sites you build!</p><br><br>
+		<button type="button" class="two">REGISTER HERE</button>
+	</div>
+	<div class="four">
+		<p class="txt4">Or login to your account</p>
+		<label for="mail">Your email</label><br>
+		<input type="email" id="mail" size="50"><br><br>
+		<label for="password">Password</label><br>
+		<input type="password" id="password" size="50"><br><br>
+		<button type="button" class="four">LOGIN</button>
+		<a href="#">Forgot password</a>
+	</div>
+	<div class="three">
+		<select>
+			<option>CHOOSE LANGUAGE</option>
+		</select>
+		<a href="#" class="opts">HELP CENTER</a>
+		<a href="#" class="opts">ERC WEBSITE</a>
+		<a href="#" class="opts">ERC WEBSHOP</a>
+	</div>
+</body>
+</html>
+	
+
+
